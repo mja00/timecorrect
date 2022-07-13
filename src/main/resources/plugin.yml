@@ -1,0 +1,7 @@
+name: Timecorrect
+version: '${project.version}'
+main: dev.mja00.timecorrect.Timecorrect
+api-version: 1.19
+prefix: TimeCorrect
+authors: [ mja00 ]
+description: Checks to see if your server's time is correct
