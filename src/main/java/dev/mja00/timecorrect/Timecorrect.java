@@ -24,7 +24,7 @@ public final class Timecorrect extends JavaPlugin {
     public void onEnable() {
         getLogger().info("TimeCorrect is checking the time...");
         // We'll need to make a GET request to http://worldtimeapi.org/api/ip and parse the json
-        Bukkit.getScheduler().runTaskAsynchronously(this, () -> {
+        Compatibility.runTaskAsync(this, () -> {
             String responseBody = null;
             CompletableFuture<HttpResponse<String>> response = client.sendAsync(request, HttpResponse.BodyHandlers.ofString());
             try {
